@@ -4,7 +4,8 @@ import pytesseract
 import sqlite3
 import os
 import numpy as np
-pytesseract.pytesseract.tesseract_cmd= r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+# pytesseract.pytesseract.tesseract_cmd= r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
 def create_database():
     conn = sqlite3.connect('extracted_info.db')
     cursor = conn.cursor()
